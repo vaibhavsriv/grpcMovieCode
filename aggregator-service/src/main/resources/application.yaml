@@ -1,0 +1,11 @@
+server:
+  port:8081
+
+grpc:
+  client:
+    user-service:
+      address: static://localhost:8083
+      negotiationType: plaintext
+    movie-service:
+      address: static://localhost:8082
+      negotiationType: plaintext
